@@ -1,0 +1,85 @@
+<html   lang="vi">
+    <head>
+        <title>Sản Phẩm</title>
+        <link rel="shortcut icon" type="image/vnd.microsoft.com" href="images/favicon.ico">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link type="images/vnd.microsoft.icon" rel="shortcut icon" href="data/images/favicon.ico" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        
+    </head>
+    <body>
+        <header>
+            <a href="trangchu.html"><img src="images/logo.png" id="logo"></a>
+            <section>
+                <nav>
+                    <a href="trangchu.html">Trang Chủ</a>
+                    <a href="gioithieu.html">Giới Thiệu</a>
+                    <a href="sanpham.html">Sản Phẩm</a>
+                    <a href="tintuc.html">Tin Tức</a>
+                    <a href="dangnhap.html">Đăng Nhập</a>
+                    <a href="dangki.html">Đăng Kí</a>
+                    <a href="lienhe.html">Liên Hệ</a> 
+                  
+                </nav>
+
+                <div>
+                    <form id="form-search"  method="get" action="timkiem.html" onsubmit="return testSub()">
+                        <input id="input-search" name="words" type="text" placeholder="Nhập nội dung cần tìm..." > 
+                        <button><i class="fas fa-search icon1"></i></button>
+                    </form>
+                    <button onclick=openCart()><i class="fas fa-shopping-cart icon2"></i></button>
+                   
+                </div>
+            </section>
+            
+            <img class="img1" src="images/header-img1.png">
+            <img class="img2" src="images/header-img2.png">
+            <img class="img3" src="images/header-img3.png">
+            
+        </header>
+        <main class="log-in">
+            
+            <article style="text-align: center;">
+                <h1>ĐĂNG NHẬP</h1>
+                <form method="post" enctype="application/x-www-form-urlencoded" onsubmit="return logInForm(this)" >
+                        <table>
+                            <tr>
+                                <td style="text-align: left;"><img width="300px" src="images/dangnhap/userlogin.png"></td>
+                                <td></td>
+    
+                            </tr>
+                            <tr>
+                                <td><label for="email"><i class="fa fa-user"></i></label>
+                                <input id="email" type="text" placeholder="Nhập email" ></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><label for="pass"><i class="fa fa-key"></i></label>
+                                <input id="pass" type="password" placeholder="Nhập mật khẩu" id="matkhau"></td>
+                                <td></td>
+                            </tr>
+                            
+                            <tr><td colspan="2"><b> Bạn quên <a href="#">Mật Khẩu?</a><input type="checkbox"> Ghi nhớ đăng nhập cho lần sau</b></td></tr>
+                            <tr>
+                                
+                                <td colspan="2"><input type="submit" value="Đăng Nhập"><input type="reset" value="Hủy"></td>
+                            </tr>
+                        </table>
+
+                    </fieldset>
+                </form>
+            </article>
+        </main>
+        <footer>
+          
+            &copy; 2021 Bản quyền thuộc về FreeezeVN. 
+            <i class="fab fa-facebook-f icon"></i>
+            <i class="fab fa-twitter icon"></i>
+            <i class="fab fa-pinterest icon"></i>
+          
+            <a href="#logo"><img src="images/top.png"  class="top "></a>
+        </footer>   
+        <script type="text/javascript" src="js/js2.js"></script> 
+    </body>
+</html>

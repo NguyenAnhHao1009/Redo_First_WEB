@@ -1,0 +1,96 @@
+<html   lang="vi">
+    <head>
+        <title>Sản Phẩm</title>
+        <link rel="shortcut icon" type="image/vnd.microsoft.com" href="images/favicon.ico">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link type="images/vnd.microsoft.icon" rel="shortcut icon" href="data/images/favicon.ico" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        
+    </head>
+    <body>
+        <header>
+            <a href="trangchu.html"><img src="images/logo.png" id="logo"></a>
+            <section>
+                <nav>
+                    <a href="trangchu.html">Trang Chủ</a>
+                    <a href="gioithieu.html">Giới Thiệu</a>
+                    <a href="sanpham.html">Sản Phẩm</a>
+                    <a href="tintuc.html">Tin Tức</a>
+                    <a href="dangnhap.html">Đăng Nhập</a>
+                    <a href="dangki.html">Đăng Kí</a>
+                    <a href="lienhe.html">Liên Hệ</a> 
+                  
+                </nav>
+
+                <div>
+                    <form id="form-search"  method="get" action="timkiem.html" onsubmit="return testSub()">
+                        <input id="input-search" name="words" type="text" placeholder="Nhập nội dung cần tìm..." > 
+                        <button><i class="fas fa-search icon1"></i></button>
+                    </form>
+                    <button onclick=openCart()><i class="fas fa-shopping-cart icon2"></i></button>
+                   
+                </div>
+            </section>
+            
+            <img class="img1" src="images/header-img1.png">
+            <img class="img2" src="images/header-img2.png">
+            <img class="img3" src="images/header-img3.png">
+            
+        </header>
+        <main class="contact">
+            
+            <article>
+                <h1>LIÊN HỆ</h1>
+                
+               <p><i class="fa fa-map-marked-alt"></i> <b> Địa Chỉ: Đường số 01, Tòa nhà ABC, TP Cần Thơ</b>
+                Nếu bạn có góp ý xin vui lòng liên hệ thư điện tử hoặc điền form bên dưới. Xin cảm ơn</p>
+            
+                <h1>GỚP Ý</h1>
+                <form method="post" enctype="application/x-www-form-urlencoded" onsubmit="return connectForm(this)">
+                <div class="center">
+                        <table>
+                            <tr>
+                                <td><label for="name"><i class="fas fa-user-alt"></i></label></td>
+                                <td><input type="text" placeholder="Vui lòng nhập họ và tên" id="name" autofocus></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email"><i class="fas fa-envelope"></i></label></td>
+                                <td><input type="text" placeholder="Vui lòng nhập địa chỉ Email" id="email" ></td>
+                            </tr>
+                            <tr>
+                                
+                                <td> <i class="fas fa-bars"></i></td>
+                                <td><select>
+                                    <option value="Về Sản Phẩm/Dịch Vụ">Về Sản Phẩm/Dịch Vụ</option>
+                                    <option value="Về Ưu Đãi Thành Viên">Về Ưu Đãi Thành Viên</option>
+                                    <option value="Về Tin Tuyển Dụnng">Về Tin Tuyển Dụnng</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-sticky-note bot"></i></td>
+                                <td><textarea id="textarea" placeholder="Nội Dung Phản Hồi" cols="50" rows="7"></textarea></td>
+                            </tr>
+                            
+                            <tr>
+                                <td><input type="submit" value="Gửi"></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    </fieldset>
+                </form>
+            </article>
+        </main>
+        <footer>
+          
+            &copy; 2021 Bản quyền thuộc về FreeezeVN. 
+            <i class="fab fa-facebook-f icon"></i>
+            <i class="fab fa-twitter icon"></i>
+            <i class="fab fa-pinterest icon"></i>
+          
+            <a href="#logo"><img src="images/top.png"  class="top "></a>
+        </footer>  
+        <script type="text/javascript" src="js/js2.js"></script> 
+    </body>
+</html>

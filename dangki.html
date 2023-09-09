@@ -1,0 +1,99 @@
+<html   lang="vi">
+    <head>
+        <title>Sản Phẩm</title>
+        <link rel="shortcut icon" type="image/vnd.microsoft.com" href="images/favicon.ico">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link type="images/vnd.microsoft.icon" rel="shortcut icon" href="data/images/favicon.ico" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        
+    </head>
+    <body>
+        <header>
+            <a href="trangchu.html"><img src="images/logo.png" id="logo"></a>
+            <section>
+                <nav>
+                    <a href="trangchu.html">Trang Chủ</a>
+                    <a href="gioithieu.html">Giới Thiệu</a>
+                    <a href="sanpham.html">Sản Phẩm</a>
+                    <a href="tintuc.html">Tin Tức</a>
+                    <a href="dangnhap.html">Đăng Nhập</a>
+                    <a href="dangki.html">Đăng Kí</a>
+                    <a href="lienhe.html">Liên Hệ</a> 
+                  
+                </nav>
+
+                <div>
+                    <form id="form-search"  method="get" action="timkiem.html" onsubmit="return testSub()">
+                        <input id="input-search" name="words" type="text" placeholder="Nhập nội dung cần tìm..." > 
+                        <button><i class="fas fa-search icon1"></i></button>
+                    </form>
+                    <button onclick=openCart()><i class="fas fa-shopping-cart icon2"></i></button>
+                   
+                </div>
+            </section>
+            
+            <img class="img1" src="images/header-img1.png">
+            <img class="img2" src="images/header-img2.png">
+            <img class="img3" src="images/header-img3.png">
+            
+        </header>
+        <main class="sign-in">
+            
+            <article style="text-align: center;">
+                <h1>Đăng Kí</h1>
+                <form id="signInForm" onsubmit="return signInForm(this)" method="post" enctype="application/x-www-form-urlencoded">
+                        <table>
+                            <tr>
+                                <td><label for="email"><i class="fas fa-envelope icons"></i></label></td>
+                                <td><input type="text" id="email" placeholder="Vui lòng nhập email" autofocus ></td>
+                            </tr>
+                            <tr>
+                                <td><label for="matkhau"><i class="fas fa-key icons"></i></label></td>
+                                <td><input type="password" id="pass" placeholder="Vui lòng nhập mật khẩu" ></td>
+                            </tr>
+                            <tr>
+                                <td><label for="matkhau2"><i class="fas fa-key icons"></i></label></td>
+                                <td><input type="password" id="pass2" placeholder="Vui lòng nhập mật khẩu"></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-user"></i></td>
+                                <td><input type="radio" id="Ag" name="member"> <b>Bạc</b> 
+                                    <input type="radio" id="Au" name="member"> <b>Vàng</b> 
+                                    <input type="radio" id="Pt" name="member"><b>Bạch Kim</b>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-id-badge icons"></i></td>
+                                <td><input type="file" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><b>Thông qua việc tạo tài khoản, bạn đồng ý với <a href="#">Điều khoảng và <br> Quyền riêng tư của chúng tôi</a></b></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button onclick="">Đăng kí </button>
+                                    <button type="reset">Hủy </button>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        
+                   
+                </form>
+            </article>
+        </main>
+        <footer>
+          
+            &copy; 2021 Bản quyền thuộc về FreeezeVN. 
+            <i class="fab fa-facebook-f icon"></i>
+            <i class="fab fa-twitter icon"></i>
+            <i class="fab fa-pinterest icon"></i>
+          
+            <a href="#logo"><img src="top.png"  class="top "></a>
+        </footer>  
+        <script type="text/javascript" src="js/js2.js"></script> 
+    </body>
+</html>
